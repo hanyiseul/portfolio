@@ -1,4 +1,36 @@
 @charset "utf-8";
 
 /* 로그인 */
-.snsLogin{margin:0 auto;}
+.loginWrap{width:695px;margin:0 auto;padding:60px 0 0;}
+.loginWrap .form{float:left;width:468px;}
+.loginWrap .btnArea{float:right;}
+.loginWrap .btnArea .btnLogin{padding:65px 70px;border:none;color:#fff;font-size:20px;font-weight:600;background:#00965e;}
+.login{clear:both;display:inline-flex;margin:18px 0 0;color:#666;font-size:14px;}
+.login .linkGroup{margin-left:25px;line-height:27px;}
+
+.snsLogin{margin-top:64px;font-size:0;text-align:center;}
+.snsLogin li{display:inline-block;width:66px;height:66px;margin:0 15px;}
+.snsLogin li a{display:inline-block;width:66px;height:66px;border-radius:50%}
+.snsLogin li.kakao a{background:url('../img/pc/sns_login.png') no-repeat left center;}
+.snsLogin li.naver a{background:url('../img/pc/sns_login.png') no-repeat -66px center;}
+.snsLogin li.facebook a{background:url('../img/pc/sns_login.png') no-repeat -132px center;}
+
+
+
+
+
+
+
+/* mo */
+@media screen and (max-width: 1080px) {
+
+/* 로그인 */
+.loginWrap{width:100%; padding:7px 0 0;}
+.loginWrap .form{float:inherit;width:100%;}
+.snsLogin{display:none;}
+.loginWrap .btnArea{float:inherit;}
+.loginWrap .btnArea .btnLogin{width:100%;margin:22px 0 0;padding:21px 0;font-size:12px;}
+
+.login{display:block;text-align:center;}
+.login .linkGroup{margin-top:10px;line-height:12px;}
+}
