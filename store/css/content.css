@@ -3,6 +3,8 @@
 /* 로그인 */
 .loginWrap{width:695px;margin:0 auto;padding:60px 0 0;}
 .loginWrap .form{float:left;width:468px;}
+.loginWrap .inpBox{display:block;width:auto;height:auto;}
+.loginWrap input{height:59px;padding:0;font-size:18px;}
 .loginWrap .btnArea{float:right;}
 .loginWrap .btnArea .btnLogin{padding:65px 70px;border:none;color:#fff;font-size:20px;font-weight:600;background:#00965e;}
 .login{clear:both;display:inline-flex;margin:18px 0 0;color:#666;font-size:14px;}
@@ -15,8 +17,7 @@
 .snsLogin li.naver a{background:url('../img/pc/sns_login.png') no-repeat -66px center;}
 .snsLogin li.facebook a{background:url('../img/pc/sns_login.png') no-repeat -132px center;}
 
-
-
+/* 회원가입 */
 
 
 
@@ -27,10 +28,11 @@
 /* 로그인 */
 .loginWrap{width:100%; padding:7px 0 0;}
 .loginWrap .form{float:inherit;width:100%;}
+.loginWrap input{height:32px;font-size:12px;}
 .snsLogin{display:none;}
 .loginWrap .btnArea{float:inherit;}
 .loginWrap .btnArea .btnLogin{width:100%;margin:22px 0 0;padding:21px 0;font-size:12px;}
 
 .login{display:block;text-align:center;}
-.login .linkGroup{margin-top:10px;line-height:12px;}
+.login .linkGroup{margin-top:5px;line-height:27px;}
 }

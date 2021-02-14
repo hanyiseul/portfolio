@@ -84,4 +84,4 @@ ins {display:inline-block;vertical-align:middle;margin:0;text-decoration:none;fo
 hr {margin:50px 0;border-bottom:1px solid #ccc;border-top:0;border-left:0;border-right:0;}
 button {cursor:pointer;border:none;}
 button[disabled] {cursor:default;}
-img{width:100%; max-width:100%;}
+img{width:100%;max-width:100%;}
