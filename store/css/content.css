@@ -7,6 +7,8 @@
 .loginWrap input{height:59px;padding:0;font-size:18px;}
 .loginWrap .btnArea{float:right;}
 .loginWrap .btnArea .btnLogin{padding:65px 70px;border:none;color:#fff;font-size:20px;font-weight:600;background:#00965e;}
+
+
 .login{clear:both;display:inline-flex;margin:18px 0 0;color:#666;font-size:14px;}
 .login .linkGroup{margin-left:25px;line-height:27px;}
 
@@ -28,7 +30,7 @@
 /* 로그인 */
 .loginWrap{width:100%; padding:7px 0 0;}
 .loginWrap .form{float:inherit;width:100%;}
-.loginWrap input{height:32px;font-size:12px;}
+.loginWrap input{height:32px;padding-left:15px;font-size:12px;}
 .snsLogin{display:none;}
 .loginWrap .btnArea{float:inherit;}
 .loginWrap .btnArea .btnLogin{width:100%;margin:22px 0 0;padding:21px 0;font-size:12px;}

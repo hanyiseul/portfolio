@@ -9,9 +9,9 @@
 /* padding */
 
 /* txt */
-.ac{text-align:center;}
-.al{text-align:left;}
-.ar{text-align:right;}
+.ac{text-align:center !important;}
+.al{text-align:left !important;}
+.ar{text-align:right !important;}
 .blind{display: inline-block;position: absolute !important;width: 1px;height: 1px;margin: -1px;border: 0;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 
 .normal{font-weight:500;}
@@ -48,7 +48,7 @@
 
 /* button */
 .btn_m{width:100px;height:46px;margin-left:10px;color:#333;font-family:'s-core_dream3_light';border-radius:5px;}
-
+.btn_del{position:absolute;top:50%;right:3px;display:none;width:20px;height:20px;margin-top:-10px;padding:5px;color:#999;font-size:12px;line-height:10px;vertical-align:middle;background:#efefef;border-radius:50%;box-sizing:border-box;}
 
 /* form */
 .form .inpBox{display:inline-block;width:300px;height:46px;}
@@ -104,7 +104,7 @@ select:focus{border:1px solid #00965e;}
 
 /* link */
 .linkGroup {font-size:0;text-align:center;}
-.linkGroup > .links {margin-right:34px; vertical-align:top;}
+.linkGroup > .links {margin-right:34px;vertical-align:top;}
 .linkGroup > .links.line {text-decoration:none;}
 .linkGroup > .links.line:before {content:'';position:absolute; top:50%;left:-15px;height:12px;margin-top:-6px;border-right:1px solid #b2b2b2;}
 .linkGroup > .links.line:first-child:before {content:none;}
@@ -117,6 +117,12 @@ select:focus{border:1px solid #00965e;}
 .tableY .td{display:table-cell;width:calc(100% - 200px);padding:0 45px;}
 .tableY .td.line2{height:125px;box-sizing:border-box;}
 
+.tableX{width:100%;border:1px solid #cacaca;border-collapse:collapse;table-layout:fixed;}
+.tableX tr:hover,
+.tableX tr:visited {background:#f2f6ff;}
+.tableX th,
+.tableX td{padding:10px 20px;text-align:center;border:1px solid #cacaca;}
+.tableX th{background-color:#e0e0e0;}
 
 /* mo */
 @media screen and (max-width: 1080px) {
@@ -141,7 +147,7 @@ footer{display:none;position:fixed;bottom:0;}
 /* button */
 .btn_m{width:100%;height:32px;margin:10px 0 0;font-size:12px;}
 
-.moFlex [class^="btn_"]{width:30%; margin:0 0 0 10px;}
+.moFlex .btn_m{width:30%; margin:0 0 0 10px;}
 
 /* form */
 .form .inpBox{width:100%; height:32px}
@@ -155,7 +161,7 @@ footer{display:none;position:fixed;bottom:0;}
 /* select */
 
 /* input */
-input[type='text'], input[type='date'], input[type='password'], input[type='tel'], input[type='email'], input[type='number']{padding-left:15px;font-size:12px;line-height:32px;}
+input[type='text'], input[type='date'], input[type='password'], input[type='tel'], input[type='email'], input[type='number']{padding:0;font-size:12px;line-height:32px;}
 .inp:placeholder{font-size:11px;}
 input[type='checkbox'] + label, input[type='radio'] + label{min-height:24px;padding-left:28px;font-size:12px;line-height:24px;}
 input[type='checkbox'] + label:before, input[type='radio'] + label:before{width:24px;height:24px;}

@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>맛집 | 회원가입</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 
@@ -47,6 +48,7 @@
 					<span class="td moFlex">
 						<span class="inpBox">
 							<input type="text" id="id" title="아이디 입력" placeholder="아이디를 입력해주세요.">
+							<button type="button" class="btn_del">x<span class="blind">삭제</span></button>
 						</span>
 						<button type="button" class="btn_m">중복확인</button>
 					</span>
@@ -100,6 +102,16 @@
 			<img src="../img/footer.png" alt="">
 		</footer>
 	</div>
+	<script>
+	$(document).ready(function(){
+		$('.inpBox input').keyup(function(){
+			$('.btn_del').toggle(Boolean($(this).val()));
+		})
+		$('.btn_del').on('click',function(event){
+			$(this).parent().find('input').val('');
+		});
+	});
 
+	</script>
 </body>
 </html>
