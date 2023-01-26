@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  {{> head}}
+  <body class="before-load">
+    {{> noscript}}
+    {{> loading}}
+    <div class="wrapper">
+      {{> header}}
+      {{> search}}
+      <div class="container">
+        {{> aside}}
+        <main class="contents">
+          {{{innerHTML}}}
+        </main>
+      </div>
+    </div>
+    {{> footer}}
+  </body>
+</html>
