@@ -1,0 +1,19 @@
+.gnb {
+    padding : 3.7rem 0;
+    .gnbList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        > li {
+            display: inline-block;
+            margin: 0 3.4rem;
+            > a {
+                color: $gray300;
+                font-size: $font20;
+                font-weight: 500;
+                
+            }
+        }
+    }
+}
