@@ -126,9 +126,9 @@ module.exports = {
       filename: path.join("pages", "templates", "index.html"),
     }),
     new HtmlWebpackPlugin({
-      title: '맛집',
-      template: path.join("src", "handlebars", "components", "button.hbs"),
-      filename: path.join("pages", "components", "button.html"),
+      title: 'MAIN',
+      template: path.join("src", "handlebars", "templates", "main.hbs"),
+      filename: path.join("pages", "templates", "main.html"),
     }),
     new CopyPlugin({
         patterns: [
