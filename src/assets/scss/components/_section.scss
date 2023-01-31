@@ -1,0 +1,18 @@
+section {
+    position: relative;
+    width: 120rem;
+    margin: 8rem auto 0;
+
+    &:not(:first-child) {
+        margin-top: 13rem;
+    }
+
+    .titleArea {
+        .btnArea {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
