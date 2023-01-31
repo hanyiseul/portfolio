@@ -1,0 +1,35 @@
+.storeList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    
+    > li {
+        margin: 1.5rem;
+        width: calc((100% /3) - 3rem);
+        box-sizing: border-box;
+        
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: $white;
+            line-height: 3.6rem;
+            letter-spacing: -0.025;
+            padding: 9.4rem 0;
+            border-radius: 2rem;
+            box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 1, 1, 0.24);
+
+            .title {
+                font-size: 2.4rem;
+                font-weight: 600;
+            }
+            .desc {
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }       
+    }
+}
