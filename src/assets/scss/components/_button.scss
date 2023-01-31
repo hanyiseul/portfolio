@@ -1,0 +1,25 @@
+.button {
+    &.prev,
+    &.next {
+        width: 4.2rem;
+        height: 4.2rem;
+        margin: 0 0.4rem;
+        border: 0.1rem solid $gray9b;
+        border-radius: 180%;
+        background: url("../../assets/images/icon_prev.png") no-repeat center left 1.5rem;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            border: 0.1rem solid $gray300;
+        }
+
+        &:disabled {
+            background-color: $gray9b;
+        }
+    }
+
+    &.next {
+        transform: rotate(180deg);
+    }
+}
