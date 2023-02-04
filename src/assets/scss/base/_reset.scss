@@ -20,7 +20,7 @@ body {
     font-family: "s-core", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: $font-xs;
     letter-spacing: -0.025rem;
     -webkit-text-size-adjust: 100%;
     overflow-x:hidden;
@@ -76,7 +76,7 @@ textarea {
 button{
     font-family: "s-core", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: $font-xs;
 }
 
 img {
