@@ -3,17 +3,17 @@ footer {
     padding: 4.5rem 0;
     background: $gray46;
 
-    .footerWrap {
+    .footer {
         width: 120rem;
         margin: 0 auto;
 
-        .titArea {
+        .title {
             .h2 {
                 color: $gray900;
             }
         }
 
-        .footerList {
+        .footer__list {
             margin-top: 0.6rem;
             > li {
                 position: relative;
