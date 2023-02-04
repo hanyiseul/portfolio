@@ -1,0 +1,43 @@
+// input
+.input__wrap {
+    display: inline-block;
+}
+// 별점
+
+.star__scope {
+    display: flex;
+    align-items: center;
+
+    .star__input {
+        font-size: 0;
+
+        .input__wrap {
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+
+            .label__star {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                background: url("../../assets/images/icon_star.png") no-repeat center;
+            }
+
+            .input {
+
+                &:checked {
+                    ~.label__star {
+                        background: url("../../assets/images/icon_star_checked.png") no-repeat center;
+
+                    }
+                }
+                
+            }
+
+        }
+
+    }
+}
