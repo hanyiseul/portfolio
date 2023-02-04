@@ -20,7 +20,7 @@ footer {
                 position: relative;
                 display: inline-block;
                 color: $gray900;
-                font-size: 1.4rem;
+                font-size: $font-2xs;
                 font-weight: 500;
                 line-height: 2.4rem;
                 letter-spacing: -0.025rem;
@@ -41,7 +41,7 @@ footer {
 
                 a {
                     color: $gray900;
-                    font-size: 1.4rem;
+                    font-size: $font-2xs;
                     font-weight: 500;
                     line-height: 2.4rem;
                 }
@@ -52,7 +52,7 @@ footer {
     .copyright {
         margin-top: 1.3rem;
         color: $gray900;
-        font-size: 1.4rem;
+        font-size: $font-2xs;
         font-weight: 500;
         line-height: 2.4rem;
     }

@@ -14,9 +14,10 @@
 // title
 .title {
     text-align: center;
+    margin: 0 0 1.5rem;
     
     .h1 {
-        font-size: $font36;
+        font-size: $font-3xl;
         font-weight: 600;
     }
 
@@ -29,7 +30,7 @@
 
     .desc {
         color: $gray900;
-        font-size: 1.8rem;
+        font-size: $font-s;
         font-weight: 400;
         line-height: 4.8rem;
         letter-spacing: -0.025rem;

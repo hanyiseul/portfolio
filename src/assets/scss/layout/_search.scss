@@ -1,6 +1,7 @@
 .search__wrap {
     padding: 16rem 0 24rem;
     background: url("../../assets/images/bg_search.png") no-repeat center;
+    background-size: cover;
 
     .title {
         .h1 {
@@ -39,7 +40,7 @@
         .input {
             width: 47rem;
             padding: 3.5rem 0;
-            font-size: 2rem;
+            font-size: $font-m;
             text-align: center;
 
             &::placeholder {
