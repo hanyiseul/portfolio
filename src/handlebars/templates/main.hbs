@@ -1,20 +1,23 @@
 {{#[../helpers/layout-search] htmlWebpackPlugin}}
 
     <section>
-        <div class="titleArea">
+        <div class="title">
             <h2 class="h2">내 주변 맛집</h2>
             <span class="desc">내 주변의 맛집을 찾아보세요</span>
 
-            <div class="btnArea">
+            <div class="btnGroup">
                 <button type="button" class="button prev"><span class="blind">이전</span></button>
                 <button type="button" class="button next"><span class="blind">다음</span></button>
             </div>
         </div>
 
-        <ul class="slideList storeList">
+        <ul class="slide__list store__list">
             <li>
                 <a href="#">
                     <img src="../../assets/images/img_store1.png" alt="">
+                    <div class="list__info">
+
+                    </div>
                     <p class="title">우야우야</p>
                     <span class="desc">스테이크와 와인 분위기 있는 식사</span>
                 </a>
@@ -89,17 +92,17 @@
     </section>
 
     <section>
-        <div class="titleArea">
+        <div class="title">
             <h2 class="h2">맛집 순위</h2>
             <span class="desc">금주의 맛집 순위를 찾아보세요</span>
 
-            <div class="btnArea">
+            <div class="btnGroup">
                 <button type="button" class="button prev"><span class="blind">이전</span></button>
                 <button type="button" class="button next"><span class="blind">다음</span></button>
             </div>
         </div>
 
-        <ul class="slideList storeList">
+        <ul class="slide__list store__list">
             <li>
                 <a href="#">
                     <p class="title">우야우야</p>
@@ -176,13 +179,13 @@
     </section>
 
     <section class="main">
-        <div class="titleArea">
+        <div class="title">
             <h2 class="h2">커뮤니티 게시판</h2>
             <span class="desc">다양한 정보를 실시간으로 찾아보세요</span>
         </div>
 
         <div class="board">
-            <a href="#" class="boardArea">
+            <a href="#" class="board__wrap">
                 <div class="writer">  
                     <span class="img"><img src="../../assets/images/img_profile.png" alt=""></span>
                     <p class="name">이슬</p>
@@ -192,7 +195,7 @@
             </a>
 
             
-            <a href="#" class="boardArea">
+            <a href="#" class="board__wrap">
                 <div class="writer">  
                     <span class="img"><img src="../../assets/images/img_profile.png" alt=""></span>
                     <p class="name">이슬2</p>
@@ -202,7 +205,7 @@
             </a>
 
             
-            <a href="#" class="boardArea">
+            <a href="#" class="board__wrap">
                 <div class="writer">  
                     <span class="img"><img src="../../assets/images/img_profile.png" alt=""></span>
                     <p class="name">이슬3</p>

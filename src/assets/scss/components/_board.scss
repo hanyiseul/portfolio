@@ -3,12 +3,22 @@
         margin: 2.5rem 0 0;
         box-shadow: 0.6rem 0.5rem 2rem 0 rgba(0, 1, 1, 0.24);
         
-        .boardArea { 
+        .board__wrap { 
             display: block;
             padding: 3rem 6rem;
               
             &:not(:first-child) {
                 border-top: 0.1rem solid $gray100;
+            }
+
+            > a {
+                position: relative;
+            }
+
+            .img {
+                position: absolute;
+                left: 0;
+                top: 0;
             }
   
             .writer {
