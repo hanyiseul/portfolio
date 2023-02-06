@@ -130,6 +130,11 @@ module.exports = {
       template: path.join("src", "handlebars", "templates", "main.hbs"),
       filename: path.join("pages", "templates", "main.html"),
     }),
+    new HtmlWebpackPlugin({
+      title: 'LOGIN',
+      template: path.join("src", "handlebars", "templates", "login.hbs"),
+      filename: path.join("pages", "templates", "login.html"),
+    }),
     new CopyPlugin({
         patterns: [
             {from: path.join('src', 'assets', 'images'), to: path.join('assets', 'images')},
