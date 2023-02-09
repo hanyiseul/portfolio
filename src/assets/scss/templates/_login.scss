@@ -1,0 +1,55 @@
+.login__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .title {
+        margin-top: 12.5rem;
+    }
+    
+    .login {
+        margin-top: 11rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.login__form {
+
+    .input__wrap {
+        display: block;
+
+        .input {
+            padding: 2rem 0 1.7rem;
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+.login__func {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login__btn {
+    margin-left: 3rem;
+
+    .btnLogin {
+        padding: 6.6rem 6rem;
+        color: $white;
+        font-size: 2rem;
+        letter-spacing: 0;
+        background: $point1;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background: $point2;
+        }
+
+    }
+}
