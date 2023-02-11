@@ -21,7 +21,8 @@
     .input__wrap {
         display: block;
 
-        .input {
+        .input[type="text"],
+        .input[type="password"] {
             padding: 2rem 0 1.7rem;
             font-size: 1.8rem;
         }
@@ -33,6 +34,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .input__wrap {
+        display: flex;
+        font-size: 14rem;
+    }
 }
 
 .login__btn {
