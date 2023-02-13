@@ -75,3 +75,30 @@
 
     }
 }
+
+.snsLogin__list {
+    width: 100%;
+    margin-top: 5.6rem;
+    text-align: center;
+
+    > li {
+        display: inline-block;
+        margin: 0 1.4rem;
+    }
+
+    [class^="sns__"] {
+        display: inline-block;
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+
+    .sns__kakao {
+        background: url("../../assets/images/img_kakao.png") no-repeat center;
+    }
+    .sns__naver {
+        background: url("../../assets/images/img_naver.png") no-repeat center;
+    }
+    .sns__facebook {
+        background: url("../../assets/images/img_facebook.png") no-repeat center;
+    }
+}
