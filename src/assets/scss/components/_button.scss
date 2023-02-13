@@ -23,3 +23,36 @@
         transform: rotate(180deg);
     }
 }
+
+.buttons {
+    text-align: center;
+    
+    .button {
+        display: inline-block;
+        padding: 1.2rem 2.7rem 1rem;
+        margin: 0 1rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+
+        &.btnFill {
+            color: $white;
+            background-color: $point1;
+
+            &:hover,
+            &:focus {
+                background-color: $point2;
+            }
+        }
+
+        &.btnWhite {
+            color: $point1;
+            border: 0.1rem solid $point1;
+
+            &:hover,
+            &:focus {
+                color: $point2;
+                border-color: $point2;
+            }
+        }
+    }
+}
