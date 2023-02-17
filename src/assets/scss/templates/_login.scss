@@ -26,6 +26,18 @@
         .input[type="password"] {
             padding: 2rem 0 1.7rem;
             font-size: 1.8rem;
+            background: transparent;
+            border-bottom: 0.1rem solid $gray300;
+            border-radius: 0;
+            
+            &:hover,
+            &:focus {
+                border-color: $point1;
+            }
+
+            &::placeholder {
+                color: $gray9b;
+            }
         }
     }
 

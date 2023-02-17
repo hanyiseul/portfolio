@@ -1,6 +1,33 @@
 .table {
 
     &.tableX {
+        width: 100%;
+        table-layout: fixed;
 
+        tr {
+            .th {
+                padding: 2rem 3rem;
+                color: $gray900;
+                font-weight: 500;
+                text-align: left;
+                border: 0.1rem solid $grayBc;
+                border-width: 0 0 0.1rem;
+                background: $gray100;
+            }
+
+            td {
+                padding: 1.5rem 4.5rem;
+                border: 0.1rem solid $grayBc;
+                border-width: 0 0 0.1rem;
+            }
+        }
+
+        .input__group {
+            width: calc(100% - 26.5rem);
+        }
+        
+        .input__wrap {
+            min-width: 31rem;
+        }
     }
 }

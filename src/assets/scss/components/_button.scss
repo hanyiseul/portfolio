@@ -25,34 +25,53 @@
 }
 
 .buttons {
+    margin: 8rem 0 0;
     text-align: center;
-    
-    .button {
-        display: inline-block;
-        padding: 1.2rem 2.7rem 1rem;
-        margin: 0 1rem;
-        font-size: 1.8rem;
-        cursor: pointer;
+}
 
-        &.btnFill {
-            color: $white;
-            background-color: $point1;
+.button {
+    display: inline-block;
+    padding: 1.3rem 5rem 1.1rem;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    cursor: pointer;
 
-            &:hover,
-            &:focus {
-                background-color: $point2;
-            }
+    &.btnFill {
+        color: $white;
+        background-color: $point1;
+
+        &:hover,
+        &:focus {
+            background-color: $point2;
         }
+    }
 
-        &.btnWhite {
-            color: $point1;
-            border: 0.1rem solid $point1;
+    &.btnWhite {
+        color: $point1;
+        border: 0.1rem solid $point1;
 
-            &:hover,
-            &:focus {
-                color: $point2;
-                border-color: $point2;
-            }
+        &:hover,
+        &:focus {
+            color: $point2;
+            background-color: rgba(214,242,231,0.2);
+            border-color: $point2;
         }
+    }
+
+    &.btnGray {
+        color: $gray300;
+        background-color: $gray100;
+
+        &:hover,
+        &:focus {
+            color: $gray600;
+        }
+    }
+
+    &.small {
+        margin: 0 0.8rem;
+        padding: 1.1rem 3rem 1rem;
+        border-radius: 0.3rem;
     }
 }
