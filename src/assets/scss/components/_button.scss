@@ -1,4 +1,11 @@
 .button {
+    display: inline-block;
+    padding: 1.3rem 5rem 1.1rem;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    cursor: pointer;
+
     &.prev,
     &.next {
         width: 4.2rem;
@@ -22,20 +29,6 @@
     &.next {
         transform: rotate(180deg);
     }
-}
-
-.buttons {
-    margin: 8rem 0 0;
-    text-align: center;
-}
-
-.button {
-    display: inline-block;
-    padding: 1.3rem 5rem 1.1rem;
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    vertical-align: middle;
-    cursor: pointer;
 
     &.btnFill {
         color: $white;
@@ -61,6 +54,7 @@
 
     &.btnGray {
         color: $gray300;
+        border-radius: 0.5rem;
         background-color: $gray100;
 
         &:hover,
@@ -74,4 +68,9 @@
         padding: 1.1rem 3rem 1rem;
         border-radius: 0.3rem;
     }
+}
+
+.buttons {
+    margin: 8rem 0 0;
+    text-align: center;
 }
