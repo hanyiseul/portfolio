@@ -69,22 +69,14 @@
 
     &.input__3 {
         .input__wrap {
+            min-width: auto;
             width: calc(100% / 3);
         }
-    }
-
-    .input__text {
-        display: inline-block;
-        margin: 0 1rem;
-        color: $gray900;
-        font-size: 1.6rem;
-        font-weight: 300;
     }
 
     &.vertical {
         align-items: flex-start;
         flex-direction: column;
-        width: calc(100% - 26.5rem);
         
         .input__wrap {
             width: 100%;
@@ -92,27 +84,66 @@
                 margin: 1rem 0 0;
             }
         }
+    }
 
-        &.address {
-            .input__wrap {
-                &:first-child {
-                    width: 50%;
-                }
+    &.email {
+        .input__wrap,
+        .select {
+            width: 20rem;
+        }
+    }
+
+    &.address {
+        .input__wrap {
+            &:first-child {
+                width: 50%;
             }
         }
     }
+
+    .input__wrap,
+    .select__wrap {
+        &:not(:first-child) {
+            margin-left: 1rem;
+        }
+    }
+
+    .input__text {
+        display: inline-block;
+        margin: 0 0 0 1rem;
+        color: $gray900;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
 }
+
 
 // select 
+.select__wrap {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 1.6rem;
+        display:inline-block;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-left: 0.5rem;
+        border-top: 0.1rem solid #333;
+        border-right: 0.1rem solid #333;
+        transform: translateY(-50%) rotate(135deg);
+    }
 
-.select {
-    padding: 1.5rem 5.2rem 1.4rem 2rem;
-    color: $gray900;
-    text-align: left;
-    background: $white;
-
+    .select {
+        padding: 1.5rem 5.2rem 1.4rem 2rem;
+        color: $gray900;
+        text-align: left;
+        background: $white;
+    
+        
+    }
 }
-
 
 
 

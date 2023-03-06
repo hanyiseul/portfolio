@@ -23,7 +23,17 @@
         }
 
         .input__group {
-            width: calc(100% - 26.5rem);
+            max-width: 31rem;
+            // width: calc(100% - 26.5rem);
+
+            &.email,
+            &.address {
+                max-width: 64rem;
+            }
+            
+            .input__wrap {
+                min-width: auto;
+            }
         }
         
         .input__wrap {
