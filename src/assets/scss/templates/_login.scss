@@ -64,6 +64,9 @@
             &:hover,
             &:focus {
                 font-weight: 500;
+                &:before {
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -102,6 +105,12 @@
         display: inline-block;
         width: 6.6rem;
         height: 6.6rem;
+
+        &:hover,
+        &:focus {
+            border-radius: 50%;
+            box-shadow: 0.3rem 0.3rem 0.5rem 0px rgba(0, 0, 0, 0.2);
+        }
     }
 
     .sns__kakao {
