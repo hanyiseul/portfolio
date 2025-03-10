@@ -1,19 +1,15 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from '../App';
 import NotFoundPage from '../NotFoundPage';
-import ProductList from '../pages/ProductList';
-import ProductWrite from '../pages/ProductWrite';
-import ProductDetail from '../pages/ProductDetail';
-import Login from '../pages/Login';
-import Setting from '../pages/Setting';
-import Search from '../pages/Search';
+import Main from '../pages/Main';
+import ButtonGuide from '../\bguide/Button';
 
 const routes = createBrowserRouter([
   {
     path: '/',
     // 참고: https://stackabuse.com/redirects-in-react-router/
     // 참고: https://devalice.tistory.com/112
-    element: <Navigate to="/pages/productList" />,
+    element: <Navigate to="/pages/Main" />,
     errorElement: <NotFoundPage />,
   },
   {
@@ -23,40 +19,36 @@ const routes = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Navigate to="productList" />,
+        element: <Navigate to="main" />,
+      },
+      {
+        path: 'main',
+        element: <Main />,
       },
       {
         path: 'productList',
-        element: <ProductList />,
+        element: <Main />,
+      },
+    ],
+  },
+  {
+    path: '/guide',
+    element: <App />,
+    errorElement: <NotFoundPage />,
+    children: [
+      {
+        path: '',
+        element: <Navigate to="button" />,
       },
       {
-        path: 'productWrite',
-        element: <ProductWrite />,
-      },
-      {
-        path: 'productDetail/:productId',
-        element: <ProductDetail />,
+        path: 'button',
+        element: <ButtonGuide />,
       },
     ],
   },
   {
     path: '*',
     element: <NotFoundPage />,
-    errorElement: <NotFoundPage />,
-  },
-  {
-    path: '/pages/login',
-    element: <Login />,
-    errorElement: <NotFoundPage />,
-  },
-  {
-    path: '/pages/setting',
-    element: <Setting />,
-    errorElement: <NotFoundPage />,
-  },
-  {
-    path: '/pages/search',
-    element: <Search />,
     errorElement: <NotFoundPage />,
   },
 ]);
