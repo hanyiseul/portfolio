@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const commonStyles = `
-  border: 1px solid red;
+  .button {
+    border: 1px solid red;
+  }
 `;
 
 export const StyledButton = styled.button`
