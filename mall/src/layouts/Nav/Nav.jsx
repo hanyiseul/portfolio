@@ -1,22 +1,21 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
 import Image from '../../components/Image';
 
 export default function Nav() {
-  // const nav = [
-  //   {
-  //     id: "ProductList",
-  //     title: "홈",
-  //     imageUrl: ""
-  //   },
-  //   {
-  //     id: "Setting",
-  //     title: "My",
-  //     imageUrl: ""
-  //   }
-  // ];
-  const [nav, setNav] = useState([]);
+  const navList = [
+    {
+      id: "ProductList",
+      title: "홈",
+      imageUrl: ""
+    },
+    {
+      id: "Setting",
+      title: "My",
+      imageUrl: ""
+    }
+  ];
+  const [nav, setNav] = useState(navList);
 
   useEffect(() => {
     const navData = async () => {
@@ -27,49 +26,27 @@ export default function Nav() {
         }
         setNav(await response.json());
       } catch(error) {
-        console.log('error');
+        console.error('데이터를 불러오는 중 에러 발생:', error);
+        setNav(navList);
       }
     }
     navData();
   },[]);
 
   return (
-    <NavStyle as="nav">
+    <nav>
       <ul className="nav">
         {nav.map((navItem, index) => (
           <li key={index}>
             <NavLink className="search__link" to={`/pages/${navItem.id}`}>
-              <Image src={navItem.imageUrl} alt={`${navItem.title}`}/>
+              {navItem.imageUrl && (
+                <Image src={navItem.imageUrl} alt={`${navItem.title}`}/>
+              )}
               <span className="search__title"><strong>{navItem.title}</strong></span>
             </NavLink>
           </li>
         ))}
       </ul>
-    </NavStyle>
+    </nav>
   );
 }
-
-const NavStyle = styled.div`
-  border: 1px solid green;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-
-  .nav {
-    display: flex;
-    justify-content: space-around;
-    li {
-      width: 100%;
-    }
-    .search__link {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-  }
-`

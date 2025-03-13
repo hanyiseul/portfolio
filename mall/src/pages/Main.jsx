@@ -1,20 +1,19 @@
-import Button, { ButtonGroup } from '../components/Button/Button';  // default import 방식
-import Title from '../components/Typography/Title/Title';
+import { useEffect, useState } from 'react';
+import ProductList from '../components/ProductList';
 
 export default function Main() {
+
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("/data/product.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+      .catch((error) => console.error("데이터 불러오기 실패:", error));
+  }, [])
+
   return (
     <>
-      <Title tag="h1" title=""></Title>
-      <ul>
-        <li>
-          <Button text="로그아웃" />
-
-          <ButtonGroup>
-            <Button text="로그아웃" />
-            <Button text="로그아웃" />
-          </ButtonGroup>
-        </li>
-      </ul>
+      <ProductList/>
     </>
   );
 }

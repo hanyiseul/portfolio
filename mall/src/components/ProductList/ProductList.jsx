@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Popup from './Popup';
+import Popup from '../Popup';
 import { Link } from 'react-router-dom';
 
 export default function Products({ id, className, products }) {
